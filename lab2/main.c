@@ -32,8 +32,8 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    printf("Original Matrix:\n");
-    print_matrix(matrix, rows, cols);
+    //printf("Original Matrix:\n");
+    //print_matrix(matrix, rows, cols);
 
     struct timespec start, end;
     clock_gettime(CLOCK_MONOTONIC, &start);
@@ -61,8 +61,8 @@ int main(int argc, char *argv[]) {
     double time_taken = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / 1e9;
 
 
-    printf("\nFiltered Matrix:\n");
-    print_matrix(matrix, rows, cols);
+    //printf("\nFiltered Matrix:\n");
+    //print_matrix(matrix, rows, cols);
         
     printf("Time taken: %f seconds\n", time_taken);
     

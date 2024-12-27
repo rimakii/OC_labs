@@ -1,0 +1,4 @@
+/workspaces/os/lab5-7/build/CMakeFiles/master.dir
+/workspaces/os/lab5-7/build/CMakeFiles/worker.dir
+/workspaces/os/lab5-7/build/CMakeFiles/edit_cache.dir
+/workspaces/os/lab5-7/build/CMakeFiles/rebuild_cache.dir

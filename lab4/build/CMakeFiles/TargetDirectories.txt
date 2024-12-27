@@ -1,0 +1,6 @@
+/workspaces/os/lab4/build/CMakeFiles/methods1.dir
+/workspaces/os/lab4/build/CMakeFiles/methods2.dir
+/workspaces/os/lab4/build/CMakeFiles/test_static.dir
+/workspaces/os/lab4/build/CMakeFiles/test_dynamic.dir
+/workspaces/os/lab4/build/CMakeFiles/edit_cache.dir
+/workspaces/os/lab4/build/CMakeFiles/rebuild_cache.dir

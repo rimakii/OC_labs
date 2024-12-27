@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/test_dynamic.dir/src/main_dynamic.c.o -o test_dynamic  -Wl,-rpath,/workspaces/os/lab4/build -ldl libmethods2.so -lm 

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libmethods2.so -o libmethods2.so CMakeFiles/methods2.dir/lib/libmethods2.c.o  -lm 

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/test_static.dir/src/main_static.c.o -o test_static  -Wl,-rpath,/workspaces/os/lab4/build libmethods1.so -lm 

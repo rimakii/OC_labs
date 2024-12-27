@@ -21,9 +21,8 @@ int main() {
     }
 
     if (pid == 0) { 
-        close(pipefd[1]); // Close the write end of pipe
+        close(pipefd[1]);
 
-        // Redirect pipe's read end to stdin
         dup2(pipefd[0], STDIN_FILENO);
         close(pipefd[0]);
 
@@ -31,7 +30,7 @@ int main() {
         perror("execl");
         exit(EXIT_FAILURE);
     } else { 
-        close(pipefd[0]); // Close the read end of pipe (parent to child)
+        close(pipefd[0]); 
 
         char filename[100];
         printf("Enter the filename: ");
@@ -44,7 +43,7 @@ int main() {
         fgets(numbers, sizeof(numbers), stdin);
         write(pipefd[1], numbers, strlen(numbers) + 1);
 
-        // Close the write end of pipe
+  
         close(pipefd[1]);
 
         wait(NULL);

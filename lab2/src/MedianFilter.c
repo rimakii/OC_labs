@@ -20,7 +20,8 @@ void apply_median_filter(int **matrix, int **result, int rows, int cols, int win
                     } 
                 }
             }
-            // Sort values and take the median
+            struct timespec start, end;
+            clock_gettime(CLOCK_MONOTONIC, &start);
             for (int m = 0; m < index - 1; m++) {
                 for (int n = m + 1; n < index; n++) {
                     if (values[m] > values[n]) {
@@ -30,6 +31,9 @@ void apply_median_filter(int **matrix, int **result, int rows, int cols, int win
                     }
                 }
             }
+            clock_gettime(CLOCK_MONOTONIC, &end);
+            double time_taken = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / 1e9;
+            printf("Sorting time: %f seconds\n", time_taken);
             result[i][j] = values[index / 2];
         }
     }
