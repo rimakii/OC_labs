@@ -33,7 +33,6 @@ void apply_median_filter(int **matrix, int **result, int rows, int cols, int win
             }
             clock_gettime(CLOCK_MONOTONIC, &end);
             double time_taken = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / 1e9;
-            printf("Sorting time: %f seconds\n", time_taken);
             result[i][j] = values[index / 2];
         }
     }
