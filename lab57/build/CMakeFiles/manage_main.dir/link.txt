@@ -1,0 +1,1 @@
+/usr/local/bin/c++ CMakeFiles/manage_main.dir/src/manage_main.cpp.o CMakeFiles/manage_main.dir/src/manage_node.cpp.o -o manage_main  -lzmq 

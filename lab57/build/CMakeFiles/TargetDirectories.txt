@@ -1,0 +1,8 @@
+/workspaces/os/lab57/build/CMakeFiles/manage_main.dir
+/workspaces/os/lab57/build/CMakeFiles/node.dir
+/workspaces/os/lab57/build/CMakeFiles/edit_cache.dir
+/workspaces/os/lab57/build/CMakeFiles/rebuild_cache.dir
+/workspaces/os/lab57/build/CMakeFiles/list_install_components.dir
+/workspaces/os/lab57/build/CMakeFiles/install.dir
+/workspaces/os/lab57/build/CMakeFiles/install/local.dir
+/workspaces/os/lab57/build/CMakeFiles/install/strip.dir

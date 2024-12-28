@@ -6,9 +6,10 @@
 #include <unistd.h>
 #include <chrono>
 #include <thread>
+#include "msg.h"
 
 zmq::context_t context(1);
-zmq::socket_t rep_socket(context, ZMQ_REP); 
+zmq::socket_t rep_socket(context, ZMQ_REP);
 zmq::socket_t pub_socket(context, ZMQ_PUB);
 
 void handle_create(int id, int parent) {
@@ -51,7 +52,7 @@ void handle_exec(int id, const std::string& text, const std::string& pattern) {
     std::vector<int> indices = find_substring(text, pattern);
     std::string reply = "Ok:" + std::to_string(id) + ":";
     if (indices.empty()) {
-        reply += "-1"; 
+        reply += "-1";
     } else {
         for (size_t i = 0; i < indices.size(); ++i) {
             if (i > 0) reply += ",";
@@ -66,7 +67,7 @@ void handle_exec(int id, const std::string& text, const std::string& pattern) {
 
 int main() {
     rep_socket.bind("tcp://*:5555");
-    pub_socket.bind("tcp://*:5556"); 
+    pub_socket.bind("tcp://*:5556");
 
     while (true) {
         zmq::message_t message;
